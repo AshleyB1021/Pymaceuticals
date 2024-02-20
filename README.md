@@ -1,21 +1,37 @@
-# Pymaceuticals_Challenge
-Module 5 assignment
+# Pymaceuticals Anti-Cancer Medication Study Analysis
 
-Background:
-As a senior data analyst at the company, you've been given access to the complete data from their most recent animal study. In this study, 249 mice who were identified with SCC tumors received treatment with a range of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens.
-The executive team has tasked you with generating all of the tables and figures needed for the technical report of the clinical study. They have also asked you for a top-level summary of the study results.
+## Overview
 
+In this assignment, I analyzed the results of an animal study conducted by Pymaceuticals, Inc., a pharmaceutical company specializing in anti-cancer medications. The study aimed to compare the effectiveness of various drug regimens, including Capomulin, in treating squamous cell carcinoma (SCC), a form of skin cancer.
 
+## Instructions: 
 
+### Prepare the Data
 
-This assignment is broken down into the following tasks:
+* Merge the mouse_metadata and study_results DataFrames into a single DataFrame.
+* Check for duplicate mouse IDs and remove any duplicate time points.
 
-Prepare the data.
+### Generate Summary Statistics
 
-Generate summary statistics.
+* Create a DataFrame of summary statistics for each drug regimen, including mean, median, variance, standard deviation, and SEM of the tumor volume.
 
-Create bar charts and pie charts.
+### Create Bar Charts and Pie Charts
 
-Calculate quartiles, find outliers, and create a box plot.
+* Generate bar charts showing the total number of rows (Mouse ID/Timepoints) for each drug regimen.
+* Create pie charts showing the distribution of female versus male mice in the study.
 
-Submit your final analysis.
+### Calculate Quartiles, Find Outliers, and Create a Box Plot
+
+* Calculate the final tumor volume of each mouse for the most promising treatment regimens.
+* Determine potential outliers and create a box plot to visualize the distribution of final tumor volume.
+
+### Create a Line Plot and a Scatter Plot
+
+* Generate a line plot of tumor volume versus time point for a mouse treated with Capomulin.
+* Create a scatter plot of mouse weight versus average observed tumor volume for the entire Capomulin treatment regimen.
+
+### Calculate Correlation and Regression
+
+* Calculate the correlation coefficient and linear regression model between mouse weight and average observed tumor volume for the Capomulin treatment regimen.
+* Plot the linear regression model on top of the scatter plot.
+
